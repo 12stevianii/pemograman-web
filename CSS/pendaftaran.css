@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 60px;
+  background-color: #1c2b39;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.sidebar .logo img {
+  width: 50px;
+  margin: 10px auto;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.sidebar-menu li {
+  padding: 15px 0;
+  font-size: 18px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.sidebar-menu li:hover {
+  background: #2d3e50;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+}
+
+/* Topbar */
+.topbar {
+  background-color: #2980b9;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.topbar .title {
+  font-size: 18px;
+}
+
+.topbar .user {
+  font-size: 24px;
+}
+
+/* Hero Section */
+.hero {
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+.hero h1 {
+  font-size: 28px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Jadwal Section */
+.jadwal {
+  padding: 30px;
+  text-align: left;
+}
+
+.jadwal h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.jadwal ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.jadwal ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.jadwal .merah {
+  color: darkred;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+/* button */
+.tombol-aksi {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.formulir {
+  background-color: #27ae60;
+}
+
+.login {
+  background-color: #2980b9;
+}
+
+.daftar-ulang {
+  background-color: #d35400;
+}
+
+/* header */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: linear-gradient(90deg, #90b7d8, #1d1c3d);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.campus-title {
+  text-align: center;
+  flex: 1;
+  margin-top: 5px;
+}
+
+.campus-title h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+.campus-title h1 span {
+  color: #ffcc00;
+  letter-spacing: 6px;
+}
+
+.campus-title p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.hover {
+  background: #ffcc00;
+}
+
+
+/* footer */
+footer.footer {
+  background: rgba(0, 0, 102, 0.8); /* Biru tua transparan */
+  color: #ffffff; /* Teks putih */
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer .footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer .footer-column h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #fff;
+  border-bottom: 2px solid #ffffff80;
+  padding-bottom: 8px;
+}
+
+.footer .footer-column p,
+.footer .footer-column a {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer .footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons img {
+  width: 24px;
+  height: 20px;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ccc;
+  border-top: 1px solid #ffffff33;
+  padding-top: 15px;
+}
+
+/* untuk jarak header dengan isi */
+.content-wrapper {
+  padding-top: 105px;   
+}
