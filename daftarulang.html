@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Pendaftaran Ulang Mahasiswa</title>
+  <link rel="stylesheet" href="css/daftarulang.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Pendaftaran Ulang Mahasiswa</h2>
+    <form id="daftarUlangForm">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+      <label for="nim">NIM</label>
+      <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+
+      <label for="prodi">Program Studi</label>
+      <select id="prodi" name="prodi" required>
+        <option value="S2 Sistem Komputer">S2 Sistem Komputer</option>
+        <option value="S1 Sistem Komputer">S1 Sistem Komputer</option>
+        <option value="S1 Teknik Informatika">S1 Teknik Informatika</option>
+        <option value="S1 Pendidikan Teknologi Informasi">S1 Pendidikan Teknologi Informasi</option>
+        <option value="D3 Manajemen Informatika">D3 Manajemen Informatika</option>
+        <option value="D3 Komputerisasi Akuntansi">D3 Komputerisasi Akuntansi</option>
+        <option value="S1 Hukum">S1 Hukum</option>
+        <option value="S1 Kewirausahaan">S1 Kewirausahaan</option>
+        <option value="S1 Ilmu Sosial">S1 Ilmu Sosial</option>
+      </select>
+
+      <label for="tanggal">Tanggal Pendaftaran Ulang</label>
+      <input type="date" id="tanggal" name="tanggal" required>
+
+      <button type="submit">Kirim Pendaftaran Ulang</button>
+    </form>
+  </div>
+
+  <script src="js/daftarulang.js"></script>
+</body>
+</html>

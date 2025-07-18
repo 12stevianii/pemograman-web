@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Pendaftaran Mahasiswa</title>
+  <link rel="stylesheet" href="css/formulir.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Formulir Pendaftaran Mahasiswa Baru</h2>
+    <form id="formPendaftaran">
+      <!-- Data Pribadi -->
+      <fieldset>
+        <legend>Data Pribadi</legend>
+        <label>Nama Lengkap:</label>
+        <input type="text" id="nama" required>
+
+        <label>NIK / No. KTP:</label>
+        <input type="text" id="nik" required>
+
+        <label>Tempat Lahir:</label>
+        <input type="text" id="tempat" required>
+
+        <label>Tanggal Lahir:</label>
+        <input type="date" id="tanggal" required>
+
+        <label>Jenis Kelamin:</label>
+        <select id="jk" required>
+          <option value="">-- Pilih --</option>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label>Alamat:</label>
+        <textarea id="alamat" required></textarea>
+
+        <label>No HP:</label>
+        <input type="text" id="hp" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+      </fieldset>
+
+      <!-- Data Pendidikan -->
+      <fieldset>
+        <legend>Data Pendidikan</legend>
+        <label>Asal Sekolah:</label>
+        <input type="text" id="sekolah" required>
+
+        <label>Tahun Lulus:</label>
+        <input type="number" id="tahun" required>
+
+        <label>Jurusan yang Diminati:</label>
+        <select id="jurusan" required>
+        <option value="">-- Pilih Jurusan --</option>
+            <optgroup label="Fakultas Ilmu Komputer">
+            <option value="S2 Sistem Komputer">S2 Sistem Komputer</option>
+            <option value="S1 Sistem Komputer">S1 Sistem Komputer</option>
+            <option value="S1 Teknik Informatika">S1 Teknik Informatika</option>
+            <option value="S1 Pendidikan Teknologi Informasi">S1 Pendidikan Teknologi Informasi</option>
+            <option value="D3 Manajemen Informatika">D3 Manajemen Informatika</option>
+            <option value="D3 Komputerisasi Akuntansi">D3 Komputerisasi Akuntansi</option>
+        </optgroup>
+            <optgroup label="Fakultas Hukum dan Ilmu Sosial">
+            <option value="S1 Hukum">S1 Hukum</option>
+            <option value="S1 Kewirausahaan">S1 Kewirausahaan</option>
+            <option value="S1 Ilmu Sosial">S1 Ilmu Sosial</option>
+        </optgroup>
+        </select>
+      </fieldset>
+
+      <!-- Upload Dokumen -->
+      <fieldset>
+        <legend>Upload Dokumen</legend>
+        <label>Ijazah (PDF):</label>
+        <input type="file" id="ijazah" accept=".pdf" required>
+
+        <label>KTP (PDF/JPG):</label>
+        <input type="file" id="ktp" accept=".pdf,.jpg,.jpeg" required>
+
+        <label>Pas Foto (JPG):</label>
+        <input type="file" id="foto" accept=".jpg,.jpeg" required>
+      </fieldset>
+
+      <div class="button-group">
+         <button class="btn-daftar">Daftar</button>
+        <button class="btn-keluar">Keluar</button>
+      </div>
+
+    </form>
+
+
+  </div>
+
+  <script src="js/formulir.js"></script>
+</body>
+</html>
