@@ -1,0 +1,105 @@
+body {
+  background-color: #f5f6fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+thead th {
+  background-color: #f3f3f3;
+  text-align: left;
+  padding: 10px;
+}
+
+tbody td {
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.total-row {
+  font-weight: bold;
+}
+
+.total-row td {
+  text-align: right;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.back-btn,
+.apply-btn {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn {
+  background-color: #045190;
+  color: #fff;
+}
+
+.back-btn:hover {
+  background-color: #1976D2;
+  transform: scale(1.03);
+}
+
+.apply-btn {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.apply-btn:hover {
+  background-color: #388E3C;
+  transform: scale(1.03);
+}
