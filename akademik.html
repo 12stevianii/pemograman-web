@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akademik</title>
+  <link rel="stylesheet" href="css/akademik.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="main-header">
+  <div class="header-container">
+      <div class="logo">
+        <img src="img/Logo.png" alt="Logo Kampus" />
+      </div>
+      <div class="campus-title">
+        <h1>UNIVERSITAS <span>HANDAYANI</span></h1>
+        <p>MAKASSAR</p>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.htm">Home</a></li>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="akademik.html">Akademik</a></li>
+          <li><a href="informasi.html">Informasi</a></li>
+          <li><a href="pendaftaran.html" class="highlight">PENDAFTARAN MABA</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+
+  <div class="content-wrapper">
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+  <div class="logo">📘 Akademik</div>
+  <input type="text" placeholder="Pencarian Menu..." class="search-box">
+  <ul class="menu">
+    <li class="dropdown">
+      FAKULTAS
+          <ul class="submenu">
+            <li><a href="fakultas_ilmu_komputer.html">Fakultas Ilmu Komputer</a></li>
+            <li><a href="fhis.html">Fakultas Hukum dan Sosial</a></li>
+          </ul>
+    </li>
+    <li><a href="biaya.html">BIAYA PENDIDIKAN</a></li>
+        <li><a href="dosen.html">DOSEN</a></li>
+  </ul>
+</aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <h1>UNIVERSITAS HANDAYANI MAKASSAR</h1>
+    
+      </header>
+
+      <section class="cards">
+        <div class="card blue">JML MHS AKTIF <strong>1.101</strong></div>
+        <div class="card green">JML MHS LAKI-LAKI <strong>589</strong></div>
+        <div class="card orange">JML MHS PEREMPUAN <strong>512</strong></div>
+        <div class="card red">JML DOSEN AKTIF <strong>65</strong></div>
+        <div class="card grey">SUDAH KRS <strong>876</strong></div>
+        <div class="card teal">BELUM KRS <strong>225</strong></div>
+        <div class="card yellow">IPS TERTINGGI <strong>3.54</strong></div>
+        <div class="card darkred">IPK TERTINGGI <strong>4.00</strong></div>
+      </section>
+
+      <!-- Chart Section -->
+      <section class="chart-section">
+        <h2>GRAFIK TREND JUMLAH MAHASISWA AKTIF</h2>
+        <canvas id="chartAktif"></canvas>
+      </section>
+    </main>
+  </div>
+  </div>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Tentang -->
+    <div class="footer-column">
+      <h4>Tentang Universitas Handayani Makassar</h4>
+      <p>
+        Universitas Handayani Makassar adalah Lembaga Pendidikan Tinggi yang berdiri sejak 1996.
+        Sejak tahun 2013 menyelenggarakan program Magister Komputer (M.Kom) pertama di Indonesia Timur.
+      </p>
+    </div>
+
+    <!-- Kontak -->
+    <div class="footer-column">
+      <h4>Kontak Kami</h4>
+      <p>Jl. Adhyaksa Baru No. 1<br>
+      Makassar, Sulawesi Selatan, Indonesia<br>
+      Telp. (0411) 4673395<br>
+      Email: <a href="mailto:info@handayani.ac.id">info@handayani.ac.id</a></p>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-column">
+  <h4>Follow Us</h4>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/stmikhdy" target="_blank">
+      <img src="img/fb.png" alt="Facebook">
+    </a>
+    <a href="https://x.com/UHM_Makassar" target="_blank">
+      <img src="img/x.png" alt="Twitter">
+    </a>
+    <a href="https://www.youtube.com/channel/UChJDxYeAZTu5AOFUF3Ch3qQ" target="_blank">
+      <img src="img/yt.png" alt="YouTube">
+    </a>
+  </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; By Kelompok 9
+  </div>
+</footer>
+
+  <script src="js/akaddemik.js"></script>
+</body>
+</html>
